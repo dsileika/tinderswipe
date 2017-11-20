@@ -1,11 +1,13 @@
 var like_button = document.getElementsByClassName('recsGamepad__button--like'); 
+var nolikesmodal = document.getElementsByClassName('modalManager');
 
 var counter = 0;
 var random = 0;
 var liked_profiles = 0;
 
 (function next() {
-    if (counter++ >= 300) return;
+    if(nolikesmodal) console.log("Out of likes"); return;
+    //if (counter++ >= 300) return;
     setTimeout(function() {
 	try {
         like_button[0].click(); 
