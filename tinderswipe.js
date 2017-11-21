@@ -6,7 +6,7 @@ var random = 0;
 var liked_profiles = 0;
 
 (function next() {
-    if(nolikesmodal) console.log("Out of likes"); return;
+    if(nolikesmodal.length > 0) return alert("Out of likes");
     //if (counter++ >= 300) return;
     setTimeout(function() {
 	try {
